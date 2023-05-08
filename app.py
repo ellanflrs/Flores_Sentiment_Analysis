@@ -101,7 +101,7 @@ def app():
 
         #Randomly select samples
         label_0=df[df['label']==0].sample(n=17)
-        label_1=df[df['label']==1].sample(n=18)
+        label_1=df[df['label']==1].sample(n=17)
 
         train = pd.concat([label_1, label_0])
 
